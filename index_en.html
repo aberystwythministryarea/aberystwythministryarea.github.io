@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="canonical" href="https://html5-templates.com/" />-->
+    <title>Aberystwyth Ministry Area</title>
+	<meta name="description" content="Aberystwyth Ministry Area">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" crossorigin=""></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index_en.html"><img src="imgs/lma_logo.png" alt="Aberystwyth LMA Logo"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about_en.html">About</a>
+                    </li>
+                    <li>
+                        <a href="safeguarding_en.html">Safeguarding</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/llanychaearn">Eglwys Llanychaearn</a>
+                    </li>
+                    <li>
+                        <a href="http://www.eglwysfair.cymru">Eglwys y Santes Fair</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/HolyTrinityAber">Holy Trinity Church</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/StAnnesPenparcau">St. Anne's Church</a>
+                    </li>
+                    <li>
+                        <a href="https://www.stmikesaber.org">St. Michael's Church</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+        	<div class="item active">
+                <div class="fill" style="background-image:url('imgs/header/faithful.jpg');"></div>
+                <!--<div class="carousel-caption">
+                    <h2>Holy Trinity Church</h2>
+                </div>-->
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('imgs/header/praying.jpg');"></div>
+                <!--<div class="carousel-caption">
+                    <h2>St. Michael's Church</h2>
+                </div>-->
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('imgs/header/cleaning.jpg');"></div>
+                <!--<div class="carousel-caption">
+                    <h2>Eglwys y Santes Fair</h2>
+                </div>-->
+            </div>
+            
+            <div class="item">
+                <div class="fill" style="background-image:url('imgs/header/coffee.jpg');"></div>
+                <!--<div class="carousel-caption">
+                    <h2>St. Anne's Church</h2>
+                </div>-->
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('imgs/header/pancakes.jpg');"></div>
+                <!--<div class="carousel-caption">
+                    <h2>St. Michael's Church</h2>
+                </div>-->
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('imgs/header/allage.jpg');"></div>
+                <!--<div class="carousel-caption">
+                    <h2>St. Michael's Church</h2>
+                </div>-->
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('imgs/header/chick.jpg');"></div>
+                <!--<div class="carousel-caption">
+                    <h2>St. Michael's Church</h2>
+                </div>-->
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('imgs/header/cake.jpg');"></div>
+                <!--<div class="carousel-caption">
+                    <h2>St. Michael's Church</h2>
+                </div>-->
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('imgs/header/bubbles.jpg');"></div>
+                <!--<div class="carousel-caption">
+                    <h2>St. Michael's Church</h2>
+                </div>-->
+            </div>
+            
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+		<div class="row products">
+
+            <div class="col-lg-12">
+                <h2 class="page-header">Aberystwyth Ministry Area</h2>
+                <div class="col-md-12">
+                <p>We are a community of five Anglican churches in the Aberystwyth area within the
+                <a href="https://www.churchinwales.org.uk/en/structure/benefice/1025/">Church in Wales</a>. 
+                Our churches vary greatly in form and tradition, but they all share the same objective: 
+                to live for God and share the good news of Jesus Christ.</p>
+                
+            	<p>For more information about us <a href="about.html">see here.</a>
+                </div>
+            </div>
+		
+			<div class="col-sm-4 col-lg-4 col-md-4">
+				<div class="thumbnail">
+					<a href="https://www.facebook.com/llanychaearn"><img src="imgs/llanychaearn_sml.jpg" alt=""></a>
+					<div class="caption">
+						<h4 class="pull-right">(Bilingual)</h4>
+						<h4><a href="https://www.facebook.com/llanychaearn">Eglwys Llanychaearn</a></h4>
+						<ul>
+							<li>Sunday Service at 11:15am.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-lg-4 col-md-4">
+				<div class="thumbnail">
+					<a href="http://www.eglwysfair.cymru"><img src="imgs/santesfair_sml.jpg" alt=""></a>
+					<div class="caption">
+						<h4 class="pull-right">(Welsh)</h4>
+						<h4><a href="http://www.eglwysfair.cymru">Eglwys y Santes Fair</a></h4>
+						<ul>
+							<li>Sunday Service at 9:45am.</li>
+							<li>Sunday Service at 5:00pm via <a href="https://zoom.us/j/96433201895">Zoom</a> (Pass: 1588)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-lg-4 col-md-4">
+				<div class="thumbnail">
+					<a href="https://www.facebook.com/HolyTrinityAber"><img src="imgs/holytrinity_sml.jpg" alt=""></a>
+					<div class="caption">
+						<h4 class="pull-right">(English)</h4>
+						<h4><a href="https://www.facebook.com/HolyTrinityAber">Holy Trinity Church</a></h4>
+						<ul>
+							<li>Sunday Service at 11:00am </li>
+							<li>Wednesday Communion 11:00am</li>
+							<li>Thursday Traditional Morning Prayer 9:15am</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-lg-4 col-md-4">
+				<div class="thumbnail">
+					<a href="https://www.facebook.com/StAnnesPenparcau"><img src="imgs/stanne_sml.jpg" alt=""></a>
+					<div class="caption">
+						<h4 class="pull-right">(English)</h4>
+						<h4><a href="https://www.facebook.com/StAnnesPenparcau">St. Anne's Church</a></h4>
+						<ul>
+							<li>Sunday Service at 09:45am </li>
+							<li>Wednesday Communion 9:30am</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-lg-4 col-md-4">
+				<div class="thumbnail">
+					<a href="https://www.stmikesaber.org"><img src="imgs/stmikes_sml.jpg" alt=""></a>
+					<div class="caption">
+						<h4 class="pull-right">(English)</h4>
+						<h4><a href="https://www.stmikesaber.org">St. Michael's Church</a></h4>
+						<ul>
+							<li>Sunday Morning at 10:30am </li>
+							<li>Sunday Evening at 6:30pm (Live Stream from 7pm via <a href="https://www.youtube.com/stmikesaber">YouTube</a>) </li>
+							<li>Monday - Friday Morning Prayer at 9:15am (Live Streamed on Tuesday via <a href="https://www.facebook.com/stmikesaber">Facebook</a>)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4 col-lg-4 col-md-4">
+				<div class="thumbnail">
+					<img src="imgs/otherministry.png" alt="">
+					<div class="caption">
+						<h4>Other Ministries</h4>
+						<ul>
+							<li><a href="https://jubileestorehouse.org">Jubilee Storehouse</a></li>
+							<li><a href="https://www.facebook.com/thewellaber/">The Well</a></li>
+							<li>Mature Munch</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+	
+        <!-- Where to find us -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Where to Find Us</h2>
+            </div>
+            
+            <div id="mapid" style="width: 80%; height: 300px; margin: auto; border: 1px solid #ccc"></div>
+			<script>
+				var mymap = L.map('mapid').setView([52.407892, -4.0780656], 12);
+				L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+					maxZoom: 18,
+					attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+					id: 'osm',
+					tileSize: 256,
+				}).addTo(mymap);
+				
+				L.marker([52.41406982, -4.08826056]).addTo(mymap).bindPopup("St Mike's Church");
+				L.marker([52.3994741, -4.0708185]).addTo(mymap).bindPopup("St. Anne's Church");
+				L.marker([52.41464425, -4.07857866]).addTo(mymap).bindPopup("Holy Trinity Church");
+				L.marker([52.38717902, -4.08062877]).addTo(mymap).bindPopup("Eglwys Llanychaearn");
+				L.marker([52.413274133, -4.084779259]).addTo(mymap).bindPopup("Eglwys y Santes Fair");
+			</script>
+            
+        </div>
+        <!-- /.row -->
+                
+        <!-- Contact Us -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Contact Us</h2>
+                <hr>
+                <p>Here are some of the ways that you can get in touch with us:</p>
+            </div>
+            
+            <div class="col-md-6">
+                <p>Phone: 01970 617184</p>
+                <p>Email: <a href="mailto:office@stmikes.net">office@stmikes.net</a></p>
+            </div>
+            
+            <div class="col-md-6">
+                <p>St. Michael's Church,<br> 
+                   Laura Place,<br>
+                   Aberystwyth,<br>
+                   Ceredigion,<br>
+                   SY23 2AU</p>
+            </div>
+        </div>
+        <!-- /.row -->
+        
+        <!-- Giving -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Giving</h2>
+                <hr>
+                <p><i>Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver. 2 Corinthians 9:7 (NIV)</i></p>
+                
+                <p>You can give to us in a number of ways, including via:</p>
+                <ul>
+					<li><a href="https://tithe.ly/give?c=270770">Tithe.ly</a></li>
+					<li><a href="https://aberparish.churchsuite.com/donate/">ChurchSuite</a></li>
+					<li><a href="https://www.churchinwales.org.uk/en/clergy-and-members/gift-direct/">Gift Direct</a></li>
+					<li><a href="https://www.giveasyoulive.com/join/aberystwyth-parish">Give as you Live</a></li>
+				</ul>
+            </div>
+            
+           
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Aberystwyth Ministry Area, 2026 </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 2500 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
